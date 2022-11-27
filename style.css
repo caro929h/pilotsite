@@ -66,10 +66,6 @@ header {
   background-color: black;
 }
 
-.menu_color {
-  background-color: black;
-}
-
 /************************************* overskrift og tekst - mobil *************************************/
 
 h1 {
@@ -111,7 +107,11 @@ figcaption {
   line-height: 1.4;
   color: #fff;
 }
-
+/*
+.content {
+  display: relative;
+  z-index: 6;
+}*/
 /************************************* linje *************************************/
 hr {
   border: 0;
@@ -136,6 +136,30 @@ hr {
   position: absolute;
   inset: 0;
   width: 100%;
+}
+
+.content {
+  position: absolute;
+  left: 680px;
+  top: 120px;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: white;
+  color: black;
 }
 
 /************************************* Galleri *************************************/
@@ -167,33 +191,27 @@ hr {
     font-size: 1.5vw;
   }
 
-  /* tatovør */
+  /* Tatovør */
+
   .tatovor {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    padding: 50px;
+    margin: 70px;
   }
 
   .col_img {
-    grid-column: 1/1;
-    grid-row: 1/1;
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 20px;
   }
 
   .col_tekst {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 2;
+    grid-row: 2;
   }
 
-  .col_img {
-    width: 50%;
-    height: 80%;
-    margin-top: 70px;
-    margin-left: 180px;
-  }
-
-  /*galleri*/
-
+  /* Galleri */
   .galleri {
     margin: 60px;
     padding: 50px;
