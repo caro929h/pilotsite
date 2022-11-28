@@ -68,8 +68,13 @@ header {
 
 /************************************* overskrift og tekst - mobil *************************************/
 
+@font-face {
+  font-family: "gruppo";
+  src: url("gruppo.woff2") format("woff2");
+}
+
 h1 {
-  font-family: "Escoffier Capitaux", serif;
+  font-family: "gruppo", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20vw;
@@ -79,7 +84,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Escoffier Capitaux", serif;
+  font-family: "gruppo", serif;
   font-size: 6vw;
   color: white;
   line-height: 1.125;
@@ -87,7 +92,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Escoffier Capitaux", serif;
+  font-family: "gruppo", serif;
   font-size: 3vw;
   color: #fff;
   line-height: 1.125;
@@ -95,14 +100,14 @@ h3 {
 }
 
 p {
-  font-family: "Benguiat Pro ITC", sans-serif;
+  font-family: "gruppo", sans-serif;
   font-size: 2.5vw;
   line-height: 1.4;
   color: #fff;
 }
 
 figcaption {
-  font-family: "Benguiat Pro ITC", sans-serif;
+  font-family: "gruppo", sans-serif;
   font-size: 1vw;
   line-height: 1.4;
   color: #fff;
@@ -141,7 +146,7 @@ hr {
 .content {
   position: absolute;
   left: 680px;
-  top: 120px;
+  top: 190px;
   color: white;
   width: 100%;
   padding: 10px;
@@ -240,5 +245,12 @@ hr {
   .billede4 {
     grid-column: 3 / span 2;
     grid-row: 2;
+  }
+
+  .iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/6;
+    justify-content: center;
   }
 }
